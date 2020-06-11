@@ -201,12 +201,83 @@ background-color: rgba(0, 0, 0, 0.9);
 .blockone {
     display: flex;
 }
+/*! menur */
 
+.modal-title {
+    text-align: center;
+    margin: 9px 0;
+}
+.sum {
+    margin: 9px 0;
+}
+td {
+    padding-right: 10px;
+} 
+.item-count {
+    width: 30px;
+    margin-bottom: 10px;
+}
+.delete-item {
+    font-size: 23px;
+    margin-bottom: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.plus-item {
+font-size: 23px;
+margin-left: 10px;
+}
+.price {
+width: 100%;
+} 
+.price__block {
+    background-color: rgb(159, 25, 25);
+    border: 5px solid rgb(159, 25, 25);
+    text-align: center;
+    margin: 0 70px 6px 70px;
+    border-radius: 30px;
+    transition: all .4s;
+}
+.modal-dialog.active .price__block:hover {
+    background-color: gold;
+    border: 5px solid gold;
+}
+.basket__nom {
+height: 40px;
+width: 40px;
+}
+.basket {
+    position: absolute;
+    position: fixed;
+    right: -10px;
+    top: 100px;
+}
+.btn {
+    background-color: transparent;
+}
+.total-count {
+    color: white;
+    position: absolute;
+    position: fixed;
+    right: 9px;
+    top: 117px;
+    font-size: 17px;
+    z-index: 2;
+}
+.modal-dialog.active {
 
-
-
-
-
+    right: 31px;  
+}
+.modal-dialog {
+    padding: 0 8px;
+    position: absolute;
+    position: fixed;
+    top: 130px;
+       right: -100%;
+        background-color: aliceblue;
+        transition: all .3s ease 0s;
+        z-index: 2;
+        
+}
 @media (max-width:767px) {
 
     /*! HEADER */
@@ -215,8 +286,11 @@ background-color: rgba(0, 0, 0, 0.9);
     }
 
     .header {
+        position: fixed;
         height: 45px;
         padding-top: 12px;
+        width: 100%;
+        z-index: 4;
     }
 
     .header__icon img {
@@ -231,7 +305,7 @@ background-color: rgba(0, 0, 0, 0.9);
         height: 20px;
         /* Достается меню */
         position: relative;
-        z-index: 3;
+        z-index: 8;
     }
 
     .header__burger:before,
@@ -275,6 +349,7 @@ background-color: rgba(0, 0, 0, 0.9);
         transition: all .3s ease 0s;
         /* Дает доступ к скрулу если высота не позволяет открыйть полностью меню nav  */
         overflow: auto;
+        z-index: 3;
     }
 
     .header__menu.active {

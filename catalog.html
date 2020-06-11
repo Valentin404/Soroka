@@ -1,56 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soroka</title>
     <link rel="icon" type="image/png" href="img/icon/icon_lable.png">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/catalog.css">
 </head>
+
 <body>
-<div class="wrapper">
-    <div class="header">
-        <div class="header__icon">
-        <img src="img/icon/icon_lable.png" alt="">
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__icon">
+                <img src="img/icon/icon_lable.png" alt="">
+            </div>
+            <div class="header__burger">
+                <span></span>
+            </div>
+            <nav class="header__menu">
+                <div class="header__cont">
+                    <ul class="list">
+                        <li><a href="firma.html">Фирма</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="oplata.html">Оплата</a></li>
+                        <li><a href="dostavka.html">Доставка</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-        <div class="header__burger">
-            <span></span>
-        </div>
-        <nav class="header__menu">
-        <div class="header__cont">
-         <ul class="list">
-            <li><a href="firma.html" >Фирма</a></li>
-             <li><a href="catalog.html">Каталог</a></li>
-             <li><a href="oplata.html">Оплата</a></li>
-             <li><a href="dostavka.html">Доставка</a></li>
-             <li><a href="contact.html">Контакты</a></li>
-         </ul>
-        </div>
-        </nav>
+        <div class="basket">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart"><img src="img/icon/basket.png" alt="" class="basket__nom"><span class="total-count"></span>)</button>
     </div>
-    <div class="content">
-       catalog
-    </div>
-    <div class="footer">
+        <nav class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <nav class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Товары</h5>
+                  <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close"> -->
+                    <!-- <span aria-hidden="true">&times;</span> -->
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <table class="show-cart table">
+                    
+                  </table>
+                  <div class="sum">Общая цена: <span class="total-cart"></span> грн</div>
+                </div>
+                <div class="modal-footer">
+                  <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                  <div class="price__block"><button type="button" class="btn btn-primary price">Купить</button></div>
+                </div>
+              </nav>
+            </div>
+          </nav> 
+
+        <div class="content">
+            <div class="catalog__title">
+                Общее название товаров
+            </div>
+            <div class="content__block">
+                <div class="content__goods">
+                    <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>
+                    <div class="content__good">
+                        <div class="title">Браслет</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Браслет" data-price="24.15" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">24.15 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Товар2</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Товар2" data-price="7.05" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">7.05 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>  <div class="content__good">
+                        <div class="title">Логотип</div>
+                        <img src="img/icon/icon_lable.png" alt="">
+                        <a href="" data-name="Логотип" data-price="2.22" class="add-to-cart btn btn-primary">Добавить</a>
+                        <div class="about">Описание этого логотипа, не очень большое
+                            но так что бы было и не мало, где то до такого размера как этот пример
+                            я думаю этого более чем достаточно. Вот еще чучуть и все.
+                        </div>
+                        <div class="content__price">2.22 грн</div>
+                        
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer">
             <div class="cont__name">
                 <div class="footer__left">
-                <p class="cont__p">Сергей</p>
-                <p class="cont__p">+3899999999</p>
-                <p class="cont__p">+3899999999</p>
-                <p class="cont__p ">ывоплыпдылждплы@gmail.com</p>
+                    <p class="cont__p">Сергей</p>
+                    <p class="cont__p">+3899999999</p>
+                    <p class="cont__p">+3899999999</p>
+                    <p class="cont__p ">ывоплыпдылждплы@gmail.com</p>
+                </div>
+                <div class="footer__right">
+                    <div class="blockone">
+                        <p><a href="#"><img class="acc" id="acc1" src="img/icon/icons8_facebook_old_48px.png"></a></p>
+                        <p><a href="#"><img class="acc" id="acc2" src="img/icon/icons8_instagram_48px_1.png"></a></p>
+                    </div>
+                    <div class="blocktwo">
+                        <p><a href="#"><img class="acc" id="acc3" src="img/icon/icons8_telegram_app_48px.png"></a></p>
+                        <p><a href="#"><img class="acc" id="acc4" src="img/icon/icons8_viber_48px.png"></a></p>
+                    </div>
+                </div>
             </div>
-            <div class="footer__right">
-                <div class="blockone">
-                <p><a href="#" ><img class="acc" id="acc1" src="img/icon/icons8_facebook_old_48px.png"></a></p>
-                <p><a href="#" ><img class="acc" id="acc2" src="img/icon/icons8_instagram_48px_1.png"></a></p>
-            </div> <div class="blocktwo">
-                <p><a href="#" ><img class="acc" id="acc3" src="img/icon/icons8_telegram_app_48px.png"></a></p>
-                <p><a href="#" ><img class="acc" id="acc4" src="img/icon/icons8_viber_48px.png"></a></p>
-            </div> </div>
         </div>
     </div>
-</div>
-<script src="js/jqury.js"></script>
-<script src="js/js.js"></script>
+    <script src="js/jqury.js"></script>
+    <script src="js/js.js"></script>
+    <script src="js/shopCode.js"></script>
 </body>
+
 </html>
